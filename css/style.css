@@ -1,0 +1,49 @@
+:root {
+    --primary-bg-colour: #efeef3;
+    --primary-menu-colour: #1d1b27;
+    --menu-colour: #cccad4;
+    --menu-hover-colour: #3f3d47;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--primary-bg-colour);
+}
+
+.container .left-column {
+    background-color: var(--primary-menu-colour);
+    width: 280px;
+    padding: 2rem 1.6rem;
+}
+.menu {
+    color: var(--menu-colour);
+}
+.menu-title {
+    font-size: 16px;
+    margin-bottom: 18px;
+    padding-left: 16px;
+}
+.menu-item {
+    margin-bottom: 6px;
+    color: var(--menu-colour);
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.menu .menu-item:hover {
+    background-color: var(--menu-hover-colour);
+    color: #ffffff;
+}
+.icon {
+    font-size: 18px;
+    margin-right: 8px;
+}
