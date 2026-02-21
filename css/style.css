@@ -3,27 +3,33 @@
     --primary-menu-colour: #1d1b27;
     --menu-colour: #cccad4;
     --menu-hover-colour: #3f3d47;
+    --divider: #d2d1d6;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    /* outline: 1px solid red; */
 }
-
+/* MENU SECTION */
 .container {
     display: flex;
     min-height: 100vh;
     background-color: var(--primary-bg-colour);
 }
-
 .container .left-column {
     background-color: var(--primary-menu-colour);
     width: 280px;
     padding: 2rem 1.6rem;
+    display: flex;
 }
 .menu {
     color: var(--menu-colour);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 .menu-title {
     font-size: 16px;
@@ -46,4 +52,101 @@
 .icon {
     font-size: 18px;
     margin-right: 8px;
+}
+
+/* MAIN SECTION */
+.main {
+    width: 100%;
+}
+.top-section {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;   /* important */
+}
+.searchbox {
+    padding-left: 32px;
+    height: 100%;
+}
+.searchbox .fa-magnifying-glass {
+    font-size: 18px;
+}
+input.search {
+    border: none;
+    background-color: var(--primary-bg-colour);
+    outline: none;
+    padding: 0px 2px;
+    width: 400px;
+    font-size: 18px;
+}
+.divider {
+    background-color: var(--divider);
+    height: 1px;
+    width: calc(100% - 12px);
+    margin-left: 12px;
+}
+.profile {
+    display: flex;
+    margin-right: 6rem;
+}
+.profile-picture {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    justify-content: center;
+}
+.name {
+    font-size: 16px;
+    font-weight: bold;
+}
+.title {
+    color: #949496;
+    font-size: 15px;
+    font-weight: 500;
+}
+.employee-text {
+    margin: 1rem 0 0 2rem;
+}
+.employee-text h2 {
+    font-weight: 600;
+}
+.employee-text p {
+    color: #3f3f41;
+    font-weight: 500;
+}
+.employee-buttons {
+    display: flex;
+    justify-content: space-between;  /* pushes left & right apart */
+    align-items: center;             /* vertical alignment */
+}
+.employee-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.export {
+    background-color: #dddaed;
+    border: none;
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #2006a8;
+    cursor: pointer;
+}
+.add {
+    background: linear-gradient(45deg, #462bd1, #673ad3);
+    border: none;
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
 }

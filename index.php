@@ -15,13 +15,47 @@
     <div class="container">
         <div class="left-column">
             <div class="menu">
-                <div class="menu-title">Menu</div>
-                <div class="menu-item"><i class="icon fa-solid fa-window-maximize"></i>Dashboard</div>
-                <div class="menu-item"><i class="icon fa-solid fa-user-plus"></i>Recruitment</div>
-                <div class="menu-item"><i class="icon fa-solid fa-user-group"></i>Employee</div>
-                <div class="menu-item"><i class="icon fa-solid fa-calendar-check"></i></i>Attendence</div>
-                <div class="menu-item"><i class="icon fa-solid fa-clipboard-check"></i></i>Task</div>
-                <div class="menu-item"><i class="icon fa-brands fa-paypal"></i></i>Payroll</div>
+                <div class="menu-top">
+                    <div class="menu-title">Menu</div>
+                    <div class="menu-item"><i class="icon fa-solid fa-window-maximize"></i>Dashboard</div>
+                    <div class="menu-item"><i class="icon fa-solid fa-user-plus"></i>Recruitment</div>
+                    <div class="menu-item"><i class="icon fa-solid fa-user-group"></i>Employee</div>
+                    <div class="menu-item"><i class="icon fa-solid fa-calendar-check"></i></i>Attendence</div>
+                    <div class="menu-item"><i class="icon fa-solid fa-clipboard-check"></i></i>Task</div>
+                    <div class="menu-item"><i class="icon fa-brands fa-paypal"></i></i>Payroll</div>
+                </div>
+                <div class="menu-bottom">
+                    <div class="menu-item"><i class="icon fa-solid fa-gear"></i>Settings</div>
+                    <div class="menu-item"><i class="icon fa-solid fa-arrow-right-from-bracket"></i>Log out</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="top-section">
+                <div class="searchbox">
+                    <i class="icon fa-solid fa-magnifying-glass"></i><input class="search" placeholder="Search"type="text"></input>
+                </div>
+
+                <div class="profile">
+                    <img class="profile-picture" src="images/profile1.jpg" alt="Profile Picture" width="50" />
+                    <div class="profile-info">
+                        <div class="name">Test name</div>
+                        <div class="title">Administrator</div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <div class="employee-buttons">
+                <div class="employee-text">
+                    <h2>Employee</h2>
+                    <p>Manage your employees</p>
+                </div>
+                <div class="employee-actions">
+                    <button class="export"><i class="icon fa-solid fa-file-export"></i>Export</button>
+                    <button class="add"><i class="icon fa-solid fa-plus"></i>Add Employee</button>
+                </div>
             </div>
         </div>
     </div>
