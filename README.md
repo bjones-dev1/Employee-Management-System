@@ -1,2 +1,2 @@
 # Employee-Management-System
-A full stack application that allows management to view, create, edit and delete employees and information
+Designed and developed a full-stack employee management system with robust CRUD operations, user authentication and authorization, and a responsive administrative dashboard. The application also includes features such as login, registration, and logout functionality to manage access for management users.
